@@ -26,6 +26,8 @@ html{
 }
 a{
     text-decoration: none!important;
+    background: none!important;
+    color: inherit!important;
 }
 a:hover{
     color: currentColor!important;
@@ -141,63 +143,76 @@ body{
     color: red;
 }
 .Social_Icons + .Social_Icons{
-    margin-left: 1rem;
+    margin-left: 1rem!important;
 }
 .Facebook{
     border-radius:100%;
-    background-color: #3B5998;
-    padding: .5rem 1.8rem;
-    color: #fff;
-    font-size: 3rem;
+    background-color: #3B5998!important;
+    padding: .5rem 1.8rem!important;
+    color: #fff!important;
+    font-size: 3rem!important;
     transition: .5s;
 }
 .Facebook:hover{
-    background: #1e2e4f;
+    background: #fff!important;
+    color: #3B5998!important;
     box-shadow: 0 0 10px 0 #111111;
 
 }
 .Twitter{
     border-radius:100%;
-    background-color: #1DA1F2;
-    padding: .5rem 1.2rem;
-    color: #fff;
-    font-size: 3rem;
+    background-color: #1DA1F2!important;
+    padding: .5rem 1.2rem!important;
+    color: #fff!important;
+    font-size: 3rem!important;
     transition: .5s;
 }
 .Twitter:hover{
-    background: #fff;
-    color: #1DA1F2;
+    background: #fff!important;
+    color: #1DA1F2!important;
     box-shadow: 0 0 10px 0 #111111;
 
 }
 .Instagram{
     border-radius:100%;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    padding: .5rem 1.4rem;
-    color: #fff;
-    font-size: 3rem;
+    background: #d6249f!important;
+    background: linear-gradient(135deg, #405de6, #405de6,  #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737,
+    #fcaf45, #ffdc80)!important;
+
+    /* radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)!important; */
+    padding: .5rem 1.4rem!important;
+    color: #fff!important;
+    font-size: 3rem!important;
     transition: .5s;
 }
 .Instagram:hover{
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     box-shadow: 0 0 10px 0 #111111;
-    background: #fff;
-
+    background: linear-gradient(312deg, #405de6, #405de6,  #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737,
+    #fcaf45, #ffdc80)!important;;
 }
 .Mail{
     border-radius:100%;
-    background-color: #111111;
-    padding: .5rem 1.3rem;
-    color: #fff;
-    font-size: 3rem;
+    background-color: #111111!important;
+    padding: .5rem 1.3rem!important;
+    color: #fff!important;
+    font-size: 3rem!important;
     transition: 2s;
 }
 .Mail:hover{
-    background: #fff;
-    color: #111111;
+    background: #fff!important;
+    color: #111111!important;
     box-shadow: 0 0 10px 0 #111111;
 }
-
+footer{
+    padding: 4rem 4rem 1rem 4rem;
+    background-color: #333;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    border-bottom: 1px solid hsl(0, 0%, 45%);
+    padding-bottom: 1rem;
+}
+li + li{
+    margin-left: 1rem;
+}
